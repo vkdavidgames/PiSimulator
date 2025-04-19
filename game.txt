@@ -81,7 +81,7 @@ Achievements
 
 Layout
   *organize
-    contains:buttons, resources, buildings, unlockables
+    contains:buttons, resources, buildings, upgrades
     *buttons
       contains:Buttons
       class:bigButton
@@ -92,12 +92,10 @@ Layout
       tooltip origin:top
       header:Here are the currencies you can use.
     *buildings
-      contains:Buildings
+      contains:Buildings, BulkDisplay
       header:Theese are your buldings.
-      tooltip origin:right
       names:show
     *upgrades
       contains:Upgrades
       header:Theese are the avaliable upgrades.
-      tooltip origin:right
       names:show
