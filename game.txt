@@ -1,0 +1,95 @@
+Let's make a game!
+  name:Pi Simulator
+  desc:InDEV
+  author:Dev0630
+  created:01/03/2025
+  updated:01/03/2025
+  version:1.1
+
+Settings
+  background:https://file.garden/Z8Mx0t2e91PrvA9G/Gemz/Pi%20Click/Pie%20Clicker%20Background.png
+  //boxes : main (resources, buttons); store (upgrades, buildings); stats (achievements)
+  //ps:show
+CSS
+  #game.on 
+    {
+      background-size: 100% 100%;
+      image-rendering: pixelated;
+    }
+
+  #box-buttons {
+    width:400px;
+    height:200px;
+    left:50px;
+    top:200px;
+}
+  #box-resources {
+    width:300px;
+    height:1000px;
+    left:100px;
+}
+
+Buttons
+  *ClickPie
+    name:ClickPie
+    desc:Click this to make pie. Grants 1 pie per click.
+    class:bigButton hasFlares
+    icon:https://file.garden/Z8Mx0t2e91PrvA9G/Gemz/Pi%20Click/Pi.png
+    on click:yield 1 pie
+
+Resources
+  *pie
+    name:Pie
+    desc:Some delicious pie.
+    class:fullWidth
+
+Upgrades
+  *applePieRecipe
+    name:Apple pie recipe
+    desc:Unlocks the ability to make apple pies!
+    passive:multiply yield of ClickPie by 2
+    cost:10 pie
+    
+  *cherryPieRecipe
+    name:Cherry pie recipe
+    desc:Boy, you'll never guess!
+    passive:multiply yield of ClickPie by 3
+    cost:50 pie
+
+Achievements
+	*LetsGetPieing
+    name:Let's get pieing
+	desc:"Just started... 'Make 1 pie'".
+	req:1 ClickPie:clicks
+
+	*ForAFamily
+    name:For a family
+	desc:"We are on a roll! 'Make 10 pies'".
+	req:10 ClickPie:clicks
+
+	*DefiningPi
+    name:Defining pi
+	desc:"But what is it? Well... 3.14159265359 'Make 50 pies'".
+	req:50 ClickPie:clicks
+
+Layout
+  *organize
+    contains:buttons, resources, buildings, unlockables
+    *buttons
+      contains:Buttons
+      class:bigButton
+      names:hide
+    *resources
+      contains:Resources
+      class:fullWidth
+      tooltip origin:top
+      header:Here are the currencies you can use.
+    *buildings
+      contains:Buildings
+      header:Theese are your buldings.
+      tooltip origin:right
+      names:show
+    *unlockables
+      contains:Upgrades
+      tooltip origin:top
+      names:show
