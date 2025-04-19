@@ -96,4 +96,5 @@ Layout
       names:show
     *unlockables
       contains:Upgrades
+      class:fullWidth
       names:show
