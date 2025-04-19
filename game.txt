@@ -96,5 +96,5 @@ Layout
       names:show
     *unlockables
       contains:Upgrades
-      class:fullWidth
+      tooltip origin:right
       names:show
