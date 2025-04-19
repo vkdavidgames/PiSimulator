@@ -24,7 +24,7 @@ CSS
     top:200px;
 }
   #box-upgrades {
-    origin:right;
+    right:100px;
 }
   #box-resources {
     width:300px;
