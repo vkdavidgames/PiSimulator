@@ -98,5 +98,6 @@ Layout
       names:show
     *upgrades
       contains:Upgrades
+      header:Theese are the avaliable upgrades.
       tooltip origin:right
       names:show
