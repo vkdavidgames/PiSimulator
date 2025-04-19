@@ -97,5 +97,6 @@ Layout
       names:show
     *upgrades
       contains:Upgrades
+      class:fullHeight
       header:Theese are the avaliable upgrades.
       names:show
