@@ -23,7 +23,7 @@ CSS
     left:50px;
     top:200px;
 }
-  #box-upgrades {
+  #box-unlockables {
     right:100px;
 }
   #box-resources {
