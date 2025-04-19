@@ -4,7 +4,7 @@ Let's make a game!
   author:Dev0630
   created:01/03/2025
   updated:01/03/2025
-  version:1.1
+  version:1
 
 Settings
   background:https://file.garden/Z8Mx0t2e91PrvA9G/Gemz/Pi%20Click/Pie%20Clicker%20Background.png
@@ -22,6 +22,9 @@ CSS
     height:200px;
     left:50px;
     top:200px;
+}
+  #box-upgrades {
+    origin:right;
 }
   #box-resources {
     width:300px;
